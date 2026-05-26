@@ -16,6 +16,7 @@
     font-size: 48px;
     margin-bottom: 20px;
     color: #ffffff;
+    text-align: center;
 }
 
 .main-content p {
@@ -23,6 +24,7 @@
     margin-bottom: 30px;
     color: #ffffff;
     margin-left: 25px;  
+    text-align: center;
 }
 
 .divider-button {
@@ -68,4 +70,5 @@
     margin-bottom: 30px;
     color: #ffffff;
     margin-left: 25px; 
+    text-align: center;
 }
