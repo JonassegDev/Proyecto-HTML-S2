@@ -1,0 +1,71 @@
+.portada-principal {
+    background-image: url('../assets/portada_home.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+}
+
+.main-content {
+    padding: 40px 20px;
+}   
+
+.main-content h1 {
+    margin-left: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.main-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    margin-left: 25px;  
+}
+
+.divider-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: rgb(252, 2, 2);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin:0 25px;
+    align-items: center;
+}
+
+.btn:hover {
+    background-color: rgb(200, 0, 0);
+}
+
+.description-content {
+    display: inline-block;
+    gap: 40px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.description-content h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    margin-left: 25px; 
+    text-align: center;
+}
+
+.description-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    margin-left: 25px; 
+}
