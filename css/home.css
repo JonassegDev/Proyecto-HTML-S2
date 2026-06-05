@@ -50,7 +50,6 @@
 }
 
 .description-content {
-    display: inline-block;
     gap: 40px;
     margin-top: 20px;
     color: #fff;
@@ -71,4 +70,132 @@
     color: #ffffff;
     margin-left: 25px; 
     text-align: center;
+}
+
+#professionals {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px 20px;
+}
+
+#professionals h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    margin-left: 25px; 
+    text-align: center;
+}
+
+.professionals-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.professional-card {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.professional-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.professional-card h3{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.professional-card p {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+#location .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#locations {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px 20px;
+}
+#locations h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    margin-left: 25px; 
+    text-align: center;
+}
+
+#locations p {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    margin-left: 25px; 
+    text-align: center;
+}
+
+#locations iframe {
+    width: 85%;
+    max-width: 1100px;
+    height: 380px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: width 0.3s ease;
+}
+
+#locations iframe:hover {
+    width: 90%;
+}
+
+#networks {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px 20px;
+}
+#networks h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    margin-left: 25px; 
+    text-align: center;
+}
+#networks .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+    gap: 30px;
+
+}
+
+#networks .social-icons a {
+    color: #ffffff;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+#networks .social-icons a:hover {
+    color: rgb(252, 2, 2);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Bebas Neue', cursive;
 }

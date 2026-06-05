@@ -96,7 +96,14 @@ body {
     .logo {
         margin: 0 !important;
     }
+
+    #locations iframe {
+        width: 100% !important;  
+        height: 280px !important;
+    }
 }
+
+
 
 
 
