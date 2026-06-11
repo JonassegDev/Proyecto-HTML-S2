@@ -51,7 +51,6 @@
     flex-wrap: wrap;
 }
 
-/* === MISIÓN === */
 .mission .text-content {
     order: 1;
 }
@@ -60,13 +59,12 @@
     order: 2;
 }
 
-/* === VISIÓN === */
 .vision .text-content {
-    order: 2;        /* Texto a la derecha */
+    order: 2;        
 }
 
 .vision .image-content {
-    order: 1;        /* Imagen a la izquierda */
+    order: 1;       
 }
 
 .text-content {
@@ -96,7 +94,7 @@
     width: 100%;
     height: auto;
     border-radius: 12px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 30px #ff572288;
 }
 
 /* Responsive */
