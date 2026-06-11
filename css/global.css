@@ -15,95 +15,211 @@ body {
     color: #333;
 }
 
-.top-bar{
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4px 30px 4px 60px;
+/* ==================== TOP BAR ==================== */
+.top-bar {
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.top-bar .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.info-item i {
+    color: #fc0202;
+    font-size: 1rem;
+}
+
+/* Hover */
 .top-bar a {
     color: #fff;
     transition: color 0.3s ease;
 }
 
 .contact-info a:hover {
-    color: rgb(252, 2, 2); }
-
-.contact-info {
-    display: flex;
-    gap: 160px;
+    color: rgb(252, 2, 2);
 }
 
-.navbar{
+/* ==================== NAVBAR ==================== */
+.navbar {
     background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 20px;
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 8px 30px 8px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    flex-shrink: 0;
+}
+
+.navbar .logo img {
+    padding: 0;
+    height: 80px;
+    width: auto;
 }
 
 .navbar ul {
     display: flex;
-    gap: 160px;
-    margin-left: 10px;
-    margin-right: 150px;
+    gap: 150px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.navbar ul li {
+    display: inline-block;
 }
 
 .navbar a {
     color: #fff;
     transition: color 0.3s ease;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    white-space: nowrap;
 }
 
 .navbar a:hover {
     color: rgb(252, 2, 2);
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    margin: 0 0 0 80px;
-}
-
-@media (max-width: 768px) {
-    .top-bar {
-        padding: 10px 15px !important;
-    }
-
+@media (max-width: 1100px) {
     .contact-info {
-        flex-direction: column !important;
-        gap: 10px !important;
-    }
-
-    .navbar {
-        flex-direction: column !important;
-        padding: 15px 10px !important;
+        gap: 15px;
     }
 
     .navbar ul {
-        flex-direction: column !important;
-        gap: 12px !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        padding: 0 !important;
-        width: 100%;
-    }
-
-    .logo {
-        margin: 0 !important;
-    }
-
-    #locations iframe {
-        width: 100% !important;  
-        height: 280px !important;
+        gap: 20px;
     }
 }
 
+@media (max-width: 768px) {
+    .top-bar .container {
+        padding: 0 12px;
+    }
 
+    .contact-info {
+        gap: 18px;
+        font-size: 0.9rem;
+        justify-content: flex-start;
+        /* Evita corte del correo */
+    }
 
+    .navbar {
+        padding: 12px 15px;
+    }
 
+    .navbar .logo img {
+        height: 58px;
+    }
 
+    .navbar ul {
+        display: none;
+        /* Se activará con JS después */
+        flex-direction: column;
+        gap: 18px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.98);
+        padding: 25px 0;
+        align-items: center;
+    }
+}
+
+/* ==================== HAMBURGER MENU ==================== */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Menú en desktop */
+.nav-menu {
+    display: flex;
+    gap: 150px;
+    /* El que tú pusiste */
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+/* ==================== RESPONSIVE - MÓVIL ==================== */
+@media (max-width: 992px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        gap: 25px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.95);
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .navbar-container {
+        justify-content: space-between;
+    }
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Bebas Neue', cursive;
+}

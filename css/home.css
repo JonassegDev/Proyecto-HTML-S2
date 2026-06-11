@@ -3,7 +3,7 @@
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 90vh;
+    min-height: 80vh;
 }
 
 .main-content {
@@ -190,12 +190,4 @@
 }
 #networks .social-icons a:hover {
     color: rgb(252, 2, 2);
-}
-
-footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-    font-family: 'Bebas Neue', cursive;
 }

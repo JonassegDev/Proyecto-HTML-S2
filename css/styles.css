@@ -1,63 +1,9 @@
-.top-bar{
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4px 30px 4px 60px;
-    color: #fff;
-}
-
-.top-bar a {
-    color: #fff;
-    transition: color 0.3s ease;
-}
-
-.contact-info a:hover {
-    color: rgb(252, 2, 2); }
-
-.contact-info {
-    display: flex;
-    gap: 160px;
-}
-
-.navbar{
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 30px 8px 30px;
-}
-
-.navbar ul {
-    display: flex;
-    gap: 160px;
-    margin-left: 10px;
-    margin-right: 150px;
-}
-
-.navbar a {
-    color: #fff;
-    transition: color 0.3s ease;
-    text-transform: uppercase;
-    font-size: 20px;
-}
-
-.navbar a:hover {
-    color: rgb(252, 2, 2);
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    margin: 0 0 0 80px;
-}
-
 .portada-principal {
     background-image: url('../assets/portada_style.JPG');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 90vh;
+    min-height: 80vh;
 }
 
 .main-content {
@@ -208,12 +154,4 @@
     display: block;
     margin: 0 auto;
     border-radius: 4px;
-}
-
-footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-    font-family: 'Bebas Neue', cursive;
 }
