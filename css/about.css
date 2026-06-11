@@ -76,7 +76,7 @@
     font-family: 'Bebas Neue', cursive;
     font-size: 2.8rem;
     margin-bottom: 25px;
-    color: #fff;
+    color: #ff5722;
 }
 
 .text-content p {
@@ -94,7 +94,7 @@
     width: 100%;
     height: auto;
     border-radius: 12px;
-    box-shadow: 0 10px 30px #ff572288;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
 /* Responsive */
