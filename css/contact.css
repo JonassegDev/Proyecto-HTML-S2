@@ -1,0 +1,118 @@
+body {
+    background-image: url('../assets/portada_contact.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-section {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 100px 20px;
+    color: #fff;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.contact-info-side h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.info-box .info-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.info-box i {
+    font-size: 1.6rem;
+    color: #fc0202;
+}
+
+.info-box a {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.info-box a:hover {
+    color: #fc0202;
+}
+
+.redes-sociales h3 {
+    margin-bottom: 15px;
+    color: #ddd;
+}
+
+.social-icons a {
+    font-size: 2rem;
+    color: #fff;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fc0202;
+}
+
+.contact-form-side {
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 50px 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 18px;
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.submit-button {
+    background-color: #fc0202;
+    color: white;
+    padding: 16px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #c80000;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+}

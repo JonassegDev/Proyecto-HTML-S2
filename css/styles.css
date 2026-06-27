@@ -73,85 +73,110 @@
 }
 
 #styles {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 60px 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 80px 20px;
 }
 
 #styles h2 {
     font-family: 'Bebas Neue', cursive;
-    font-size: 36px;
-    margin-bottom: 40px;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
     color: #ffffff;
     text-align: center;
-    grid-column: 1 / span 3;
 }
 
-#styles .container {
+.container-styles{
+    max-width: 1450px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    padding: 0 40px;
+    padding: 0 20px;
 }
 
 .services-card {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 25px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.services-card:hover {
+    transform: translateY(-8px);
+}
+
+.services-card .card-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .services-card .services-title {
     color: #fff;
-    font-size: 22px;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    font-size: 1.55rem;
+    margin: 12px 0 8px;
 }
+
 .services-card .services-description {
-    color: #cccccc;
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 15px;
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.55;
+    margin-bottom: 20px;
+    flex-grow: 1;
 }
+
 .services-card .service-price {
     color: #ffffff;
     font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 1.35rem;
+    margin: 10px 0;
 }
 
-.services-card .card-footer { 
-    color: #fff;
+.services-card .card-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.services-card .btn-reserve {
-    background-color: rgb(252, 2, 2);
+.service-duration {
+    color: #bbb;
+    font-size: 0.95rem;
+}
+
+.btn-reserve {
+    background-color: #fc0202;
     color: #fff;
     border: none;
-    padding: 8px 20px;
-    border-radius: 4px;
+    padding: 10px 26px;
+    border-radius: 6px;
     cursor: pointer;
-    margin-top: 10px;
-    transition: background-color 0.3s;
+    font-size: 1rem;
 }
 
-.services-card .btn-reserve:hover {
-    background-color: rgb(200, 0, 0);
+.btn-reserve:hover {
+    background-color: #c80000;
 }
 
-#styles .container > br {
-    display: none;
+/* Responsive */
+@media (max-width: 992px) {
+    #styles .container-styles   {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-.services-card:nth-child(7) {
-    grid-column-start: 2;
-}
-
-.services-card .card-image img {
-    display: block;
-    margin: 0 auto;
-    border-radius: 4px;
+@media (max-width: 650px) {
+    #styles .container-styles   {
+        grid-template-columns: 1fr;
+    }
+    
+    #styles h2 {
+        font-size: 2.4rem;
+    }
 }

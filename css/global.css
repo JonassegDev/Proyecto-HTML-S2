@@ -17,12 +17,12 @@ body {
 
 /* ==================== TOP BAR ==================== */
 .top-bar {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8) !important;
     color: #fff;
     padding: 10px 0;
     width: 100%;
     font-size: 0.95rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
 .top-bar .container {
@@ -68,7 +68,7 @@ body {
 
 /* ==================== NAVBAR ==================== */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8) !important;
     padding: 15px 20px;
     width: 100%;
     box-sizing: border-box;
@@ -82,7 +82,7 @@ body {
 .navbar-container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 25px;
+    padding: 0 70px;
     width: 100%;
     display: flex;
     align-items: center;

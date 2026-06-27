@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <title>Contacto | Style Barber</title>
 </head>
 
@@ -50,84 +51,79 @@
                     <li><a href="styles.html">Estilos</a></li>
                     <li><a href="about.html">Sobre Nosotros</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="shop.html">Tienda</a></li>
                     <li><a href="contact.html">Contacto</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <!-- Contenido de la página de contacto -->
-    <main>
-        <section class="contact-section">
-            <div class="container">
-                <h1>Contáctanos</h1>
-                <p>Si tienes alguna pregunta o deseas agendar una cita, no dudes en contactarnos. Estamos aquí para
-                    ayudarte.</p>
-                <form action="#" method="post" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Nombre:</label>
-                        <input type="text" id="name" name="name" required>
+    <section class="contact-section">
+    <div class="contact-container">
+        
+        <!-- LADO IZQUIERDO -->
+        <div class="contact-info-side">
+            <h1>Contáctanos</h1>
+            <p class="subtitle">Estamos listos para ayudarte a mejorar tu estilo. Escríbenos o agenda tu cita.</p>
+            
+            <div class="info-box">
+                <div class="info-item">
+                    <i class="fa fa-map-marker"></i>
+                    <div>
+                        <strong>Dirección</strong>
+                        <p>Residencial Ciudad el Doral Casa E-120</p>
                     </div>
-                    <div class="form-group">
-
-                        <label for="email">Correo Electrónico:</label>
-                        <input type="email" id="email" name="email" required>
+                </div>
+                <div class="info-item">
+                    <i class="fa fa-phone"></i>
+                    <div>
+                        <strong>Teléfono</strong>
+                        <p><a href="tel:+50577889900">+505 7788-9900</a></p>
                     </div>
-                    <div class="form-group">
-                        <label for="phone">Teléfono:</label>
-                        <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="info-item">
+                    <i class="fa fa-envelope"></i>
+                    <div>
+                        <strong>Email</strong>
+                        <p><a href="mailto:stylebarber@hotmail.com">stylebarber@hotmail.com</a></p>
                     </div>
-
-                    <div class="form-group">
-                        <h3>Stilos</h3>
-                        <input type="radio" id="opcion1" name="opcion" value="opcion1">
-                        <label for="opcion1">Burst Fade</label>
-
-                        <input type="radio" id="opcion2" name="opcion" value="opcion2">
-                        <label for="opcion2">French Crop</label>
-
-                        <input type="radio" id="opcion3" name="opcion" value="opcion3">
-                        <label for="opcion3">High Fade</label>
-
-                        <input type="radio" id="opcion4" name="opcion" value="opcion4">
-                        <label for="opcion4">Mid Fade</label>
-
-                        <input type="radio" id="opcion5" name="opcion" value="opcion5">
-                        <label for="opcion5">Mullet</label>
-
-                        <input type="radio" id="opcion6" name="opcion" value="opcion6">
-                        <label for="opcion6">Skin Fade</label>
-
-                        <input type="radio" id="opcion7" name="opcion" value="opcion7">
-                        <label for="opcion7">Slicked Back</label>
-
-                        <input type="radio" id="opcion8" name="opcion" value="opcion8">
-                        <label for="opcion8">Taper Fade</label>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Mensaje:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-button">Enviar</button>
-                </form>
+                </div>
             </div>
-        </section>
-    </main>
-    <br>
-    <hr>
-    <Section>
-        <div class="container">
+
+            <!-- Redes Sociales -->
             <div class="redes-sociales">
-                <h2>Contactenos en Redes Sociales</h2>
-                <a href="https://www.facebook.com/stylebarber" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/stylebarber" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.twitter.com/stylebarber" target="_blank"><i class="fab fa-twitter"></i></a>
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/stylebarber" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/stylebarber" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/stylebarber" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
             </div>
         </div>
-    </Section>
 
+        <!-- LADO DERECHO - FORMULARIO EN CARD -->
+        <div class="contact-form-side">
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Enviar Mensaje</button>
+            </form>
+        </div>
+    </div>
+</section>
     <br>
     <br>
 
